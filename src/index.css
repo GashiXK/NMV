@@ -1,0 +1,158 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%; /* White */
+    --foreground: 220 15% 25%; /* Darker, slightly desaturated blue for main text */
+    
+    --card: 0 0% 100%;
+    --card-foreground: 220 15% 25%;
+    
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 15% 25%;
+    
+    --primary: 145 40% 30%; /* Modern Iron Green - primary actions */
+    --primary-foreground: 0 0% 98%; /* Light text on iron green */
+    
+    --secondary: 145 25% 45%; /* Lighter Iron Green for secondary elements */
+    --secondary-foreground: 0 0% 98%;
+    
+    --muted: 0 0% 96.1%;
+    --muted-foreground: 220 10% 45%; /* Muted gray text */
+    
+    --accent: 90 100% 45%; /* Vibrant Accent Green (similar to neon but more versatile) */
+    --accent-foreground: 220 15% 25%; /* Dark text on accent green */
+    
+    --destructive: 0 70% 50%;
+    --destructive-foreground: 0 0% 98%;
+    
+    --border: 0 0% 90%; /* Light border */
+    --input: 0 0% 94%;
+    --ring: 145 40% 30%; /* Iron Green for focus rings */
+    
+    --radius: 0.5rem;
+
+    /* Custom NMV Colors */
+    --nmv-dark-base: 220 30% 15%; /* Deep Blue-Gray for footer/dark sections */
+    --nmv-iron-green: 145 40% 30%; /* Main Iron Green */
+    --nmv-accent-green: 90 100% 45%; /* Accent Green (was neon) */
+    --nmv-light-bg: 0 0% 98%; /* Almost white for sections */
+    --nmv-text-dark: 220 15% 25%; /* Main text color */
+    --nmv-text-light: 0 0% 98%; /* Text on dark backgrounds */
+    --nmv-text-muted: 220 10% 55%; /* Muted text, slightly lighter */
+  }
+
+  .dark {
+    --background: 220 30% 12%; /* Dark Blue-Gray base */
+    --foreground: 0 0% 95%; /* Off-white text */
+
+    --card: 220 30% 15%;
+    --card-foreground: 0 0% 95%;
+
+    --popover: 220 30% 15%;
+    --popover-foreground: 0 0% 95%;
+
+    --primary: 145 50% 40%; /* Slightly brighter Iron Green for dark mode */
+    --primary-foreground: 0 0% 98%; 
+    
+    --secondary: 145 35% 30%; 
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 220 25% 20%;
+    --muted-foreground: 0 0% 65%;
+
+    --accent: 90 100% 50%; /* Accent Green can remain vibrant */
+    --accent-foreground: 220 15% 25%;
+
+    --destructive: 0 60% 45%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 220 25% 25%;
+    --input: 220 25% 22%;
+    --ring: 145 50% 40%;
+
+    --nmv-light-bg: 220 30% 18%; /* Darker section bg */
+    --nmv-text-muted: 0 0% 70%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Orbitron', sans-serif;
+    @apply text-foreground;
+  }
+}
+
+.accent-glow-sm {
+  box-shadow: 0 0 5px hsl(var(--nmv-accent-green)), 0 0 10px hsl(var(--nmv-accent-green));
+}
+
+.accent-glow {
+  box-shadow: 0 0 8px hsl(var(--nmv-accent-green)), 0 0 15px hsl(var(--nmv-accent-green));
+}
+
+.accent-glow-lg {
+  box-shadow: 0 0 15px hsl(var(--nmv-accent-green)), 0 0 30px hsl(var(--nmv-accent-green));
+}
+
+.text-accent-green {
+  color: hsl(var(--nmv-accent-green));
+}
+
+.bg-iron-green {
+  background-color: hsl(var(--nmv-iron-green));
+}
+.text-iron-green {
+  color: hsl(var(--nmv-iron-green));
+}
+
+.bg-dark-base {
+  background-color: hsl(var(--nmv-dark-base));
+}
+
+.btn-primary {
+  @apply bg-nmv-iron-green text-nmv-text-light font-semibold py-3 px-8 rounded-lg hover:bg-opacity-90 transition-all duration-300 shadow-md hover:shadow-lg;
+}
+.btn-primary.accent-cta {
+   @apply bg-nmv-accent-green text-nmv-dark-base accent-glow-sm hover:opacity-90;
+}
+
+.btn-secondary {
+  @apply border-2 border-nmv-iron-green text-nmv-iron-green font-semibold py-3 px-8 rounded-lg hover:bg-nmv-iron-green hover:text-nmv-text-light transition-all duration-300;
+}
+.btn-secondary.accent-cta {
+  @apply border-nmv-accent-green text-nmv-accent-green hover:bg-nmv-accent-green hover:text-nmv-dark-base;
+}
+
+.section-padding {
+  @apply py-20 md:py-28;
+}
+
+.section-bg {
+  background-color: hsl(var(--nmv-light-bg));
+}
+
+.dark .section-bg {
+   background-color: hsl(var(--nmv-light-bg));
+}
+
+.particle-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+}
