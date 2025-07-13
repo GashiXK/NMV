@@ -12,7 +12,7 @@ const Footer = () => {
 
   const contactDetails = [
     { icon: <MapPin size={18} className="mr-3 flex-shrink-0 mt-1" />, text: "Musterstrasse 1, 12345 Berlin, Germany" },
-    { icon: <Mail size={18} className="mr-3 flex-shrink-0 mt-1" />, text: "info@nmv.ai", href: "mailto:info@nmv.ai" },
+    { icon: <Mail size={18} className="mr-3 flex-shrink-0 mt-1" />, text: "info@nmc.ai", href: "mailto:info@nmc.ai" },
     { icon: <Phone size={18} className="mr-3 flex-shrink-0 mt-1" />, text: "+49 123 456789", href: "tel:+49123456789" },
   ];
 
@@ -23,10 +23,10 @@ const Footer = () => {
           <div>
             <div className="flex items-center space-x-2 mb-4">
               <img src="/nmv_logo.svg" alt="NMV Logo" className="h-10 w-10" />
-              <span className="font-orbitron text-2xl font-bold text-nmv-accent-green">NMV</span>
+              <span className="font-orbitron text-2xl font-bold text-nmv-accent-green">NMC</span>
             </div>
             <p className="text-sm text-nmv-text-muted mb-4">
-              NMV provides advanced AI solutions for businesses, enhancing processes through automation and generative technologies.
+              NMC provides advanced AI solutions for businesses, enhancing processes through automation and generative technologies.
             </p>
           </div>
 
@@ -75,7 +75,7 @@ const Footer = () => {
 
         <div className="border-t border-nmv-accent-green/20 pt-8 text-center">
           <p className="text-sm text-nmv-text-muted">
-            &copy; {currentYear} NMV. All rights reserved. German Company.
+            &copy; {currentYear} NMC. All rights reserved. German Company.
           </p>
         </div>
       </div>
