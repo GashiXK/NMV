@@ -36,7 +36,7 @@ const AboutUs = () => {
             variants={itemVariants}
             className="text-lg text-muted-foreground max-w-3xl mx-auto"
           >
-            NMV is a German company providing advanced artificial intelligence (AI) solutions for businesses seeking to improve their processes through automation and generative technologies.
+            NMV is a European company providing advanced artificial intelligence (AI) solutions for businesses seeking to improve their processes through automation and generative technologies.
           </motion.p>
         </motion.div>
 
