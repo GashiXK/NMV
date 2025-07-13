@@ -51,8 +51,8 @@ const Navbar = () => {
             animate="visible"
             custom={0}
           >
-            <img src="/nmv_logo.svg" alt="NMV Logo" className="h-10 w-10" />
-            <span className="font-orbitron text-2xl font-bold text-foreground">NMV</span>
+            <img src="/nmv_logo.svg" alt="NMC Logo" className="h-10 w-10" />
+            <span className="font-orbitron text-2xl font-bold text-foreground">NMC</span>
           </motion.a>
 
           <nav className="hidden md:flex space-x-8">
