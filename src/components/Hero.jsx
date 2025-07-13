@@ -135,7 +135,7 @@ const Hero = () => {
             transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
             className="text-lg md:text-xl text-muted-foreground mb-12 max-w-2xl mx-auto"
           >
-            NMV empowers organizations with custom-built artificial intelligence, optimizing processes and driving growth through automation and generative technologies.
+            NMC empowers organizations with custom-built artificial intelligence, optimizing processes and driving growth through automation and generative technologies.
           </motion.p>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
