@@ -30,13 +30,13 @@ const AboutUs = () => {
             variants={itemVariants}
             className="font-orbitron text-3xl sm:text-4xl font-bold mb-4"
           >
-            About <span className="text-nmv-accent-green">NMV</span>
+            About <span className="text-nmv-accent-green">NMC</span>
           </motion.h2>
           <motion.p 
             variants={itemVariants}
             className="text-lg text-muted-foreground max-w-3xl mx-auto"
           >
-            NMV is a European company providing advanced artificial intelligence (AI) solutions for businesses seeking to improve their processes through automation and generative technologies.
+            NMC is a European company providing advanced artificial intelligence (AI) solutions for businesses seeking to improve their processes through automation and generative technologies.
           </motion.p>
         </motion.div>
 
